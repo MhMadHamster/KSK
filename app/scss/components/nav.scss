@@ -60,6 +60,7 @@
                     margin: 1px 0;
                     padding: 5px 15px;
                     border-radius: 3px;
+                    max-width: 300px;
 
                     &:hover {
                         background-color: #e7e7e7;
@@ -79,6 +80,7 @@
                     padding-left: 43px;
                     margin-top: 70px;
                     position: relative;
+                    max-width: 300px;
 
                     &:before {
                         content: '';
@@ -111,6 +113,10 @@
                 padding: 10px 13px;
                 list-style: none;
                 box-sizing: border-box;
+
+                &:hover {
+                    cursor: default;
+                }
 
                 &:before {
                     position: absolute;
