@@ -1,0 +1,17 @@
+.aside-buttons {
+    position: fixed;
+    right: -75px;
+    bottom: 100px;
+    display: inline-block;
+    z-index: 10;
+
+    .btn-side {
+        position: relative;
+    }
+
+    .consult {
+        position: relative;
+        top: -160px;
+        right: -158px;
+    }
+}

@@ -1,0 +1,52 @@
+.table {
+    padding: 40px;
+}
+
+.custom-table {
+    border: 0;
+    outline: none;
+    border-spacing: 0;
+
+    & > thead {
+        background-color: #006400;
+        color: #fff;
+        font-size: 15px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        line-height: 18px;
+
+        & > th {
+            font-weight: normal;
+        }
+    }
+
+    & > tbody {
+        background-color: #f1f1f1;
+        color: #000;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-size: 15px;
+
+        & > tr {
+            box-shadow: inset 0 -1px 0 #cdcdcd;
+        }
+
+        & > tr:nth-child(2n+1) {
+            background-color: #e7e7e7;
+        }
+    }
+
+    & tr {
+        display: block;
+
+        & > td:first-child {
+            min-width: 10px;
+        }
+
+        & > td:nth-child(2) {
+            min-width: 245px;
+        }
+
+        & > td:nth-child(n+3) {
+            min-width: 90px;
+        }
+    }
+}

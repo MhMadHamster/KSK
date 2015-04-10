@@ -1,0 +1,57 @@
+.features {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &-bg {
+        width: 100%;
+        position: absolute;
+    }
+
+    &-wrapper {
+        padding-top: 30px;
+
+        .features-header {
+            font-size: 27px;
+            color: #fff;
+        }
+
+        .features-list {
+            font-size: 0;
+
+            &-item {
+                vertical-align: top;
+                margin: 20px 3%;
+                width: 19%;
+                display: inline-block;
+                position: relative;
+
+                .img-wrapper {
+                    position: relative;
+                    border-radius: 3px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .feature-name {
+                    font-size: 18px;
+                    color: #fff;
+                    display: block;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                }
+
+                .feature-text {
+                    font-size: 13px;
+                    color: #70b370;
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

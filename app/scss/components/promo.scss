@@ -1,0 +1,192 @@
+.promo {
+    background-color: #ccc;
+    padding: 20px 0;
+
+    & > .container {
+        overflow: visible;
+    }
+}
+
+.promo-slider {
+    width: 100%;
+    position: relative;
+
+    & > .slick-list {
+        overflow: hidden;
+    }
+
+    &.slick-slider {
+        margin-bottom: 17px;
+    }
+
+    .slick-track {
+        outline: none;
+    }
+
+    &-item {
+        height: 310px;
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        background-color: #fff;
+        border-radius: 3px;
+
+
+        .img-wrapper {
+            border-radius: 3px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .promo-info {
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #006400;
+            opacity: .9;
+            color: #fff;
+            width: 490px;
+            height: 215px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: -9px;
+            border-radius: 3px;
+
+            .h3 {
+                font-size: 27px;
+                font-weight: normal;
+                margin: 0;
+            }
+
+            & > p {
+                margin: 15px 0;
+                font-size: 15px;
+            }
+
+            & > a {
+                color: #fff;
+                font-size: 15px;
+                line-height: 20px;
+
+                & > i {
+                    border: 2px solid #fff;
+                    border-radius: 50%;
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    top: 3px;
+                    margin-left: 5px;
+                    box-sizing: border-box;
+
+                    &:before {
+                        left: -3px;
+                        line-height: 18px;
+                    }
+                }
+            }
+
+            .arrow-tip {
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-left: 20px solid #006400;
+                bottom: -15px;
+                right: 40px;
+            }
+        }
+    }
+}
+
+.promo-slider-nav {
+
+    &.slick-slider {
+        margin-bottom: 10px;
+    }
+
+    &-item {
+        display: inline-block;
+        width: 225px;
+        height: 72px;
+        margin: 0px 10px;
+        border-radius: 5px;
+        position: relative;
+        box-sizing: border-box;
+
+        .img-wrapper {
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        & > p {
+            color: #fff;
+            font-size: 12px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            border-radius: 5px;
+            margin: 0;
+            background-color: #006400;
+            opacity: .9;
+        }
+
+        & > .arrow-tip {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-bottom: 11px solid #000;
+            border-left: 11px solid transparent;
+            border-right: 11px solid transparent;
+            margin: auto;
+            left: 0;
+            right: 0;
+            opacity: .7;
+            top: -11px;
+            display: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+
+            & > p {
+                display: block;
+            }
+        }
+
+        &.slick-active {
+            
+            & > p {
+                font-size: 0;
+                display: block;
+                background-color: #000;
+                opacity: .7;
+            }
+
+            & > .arrow-tip {
+                display: block;
+            }
+        }
+    }
+}

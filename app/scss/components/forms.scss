@@ -1,0 +1,129 @@
+.forms-wrapper {
+    padding: 80px 0;
+    padding-left: 40px;
+}
+
+.select-example, 
+.inputs-example {
+    display: inline-block;
+    width: 49%;
+}
+
+.jq-selectbox {
+    width: 242px;
+
+    select {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    &__select {
+        font-size: 14px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        color: #000;
+        border: 1px solid rgba(0,0,0,.17);
+        background: #fff;
+        box-shadow: none;
+        padding-left: 14px;
+
+        &:hover {
+            background: #fff;
+        }
+    }
+
+    &__trigger {
+        border: 1px solid #0489b5;
+        border-radius: 3px;
+        background: rgb(5,153,191); /* Old browsers */
+        background: -moz-linear-gradient(top,  rgba(5,153,191,1) 0%, rgba(4,136,181,1) 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(5,153,191,1)), color-stop(100%,rgba(4,136,181,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top,  rgba(5,153,191,1) 0%,rgba(4,136,181,1) 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top,  rgba(5,153,191,1) 0%,rgba(4,136,181,1) 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top,  rgba(5,153,191,1) 0%,rgba(4,136,181,1) 100%); /* IE10+ */
+        background: linear-gradient(to bottom,  rgba(5,153,191,1) 0%,rgba(4,136,181,1) 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0599bf', endColorstr='#0488b5',GradientType=0 ); /* IE6-9 */
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        height: 16px;
+        width: 16px;
+        right: 8px;
+
+        &-arrow {
+            border-top-color: #fff;
+            opacity: 1;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-top: 4px solid #fff;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+        }
+    }
+
+    &.opened {
+        border-color: #0489b5;
+        box-shadow: 0 0 4px #0489b5;
+        border-radius: 5px;
+    }
+
+    &__dropdown {
+        border: 1px solid rgba(0,0,0,.17);
+        box-shadow: none;
+
+
+
+        ul > li.sel {
+            display: none;
+        }
+
+        ul {
+            padding: 4px 8px;
+        }
+
+        li {
+            margin: 4px 0;
+
+            &:hover {
+                background-color: #e7e7e7;
+                color: #000;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+.input-text {
+    margin: 5px;
+    border: 1px solid rgba(0,0,0,.17);
+    width: 240px;
+    color: #000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 14px;
+    outline: none;
+    padding: 8px 0;
+    padding-left: 14px;
+    border-radius: 4px;
+
+    &__correct {
+        border-color: #0489b5;
+        box-shadow: 0 0 4px #0489b5;
+    }
+
+    &__wrong {
+        border-color: #d9546a;
+        box-shadow: 0 0 4px #d9546a;
+    }
+
+    &__disabled {
+        color: #e0e0e0;
+        border-color: transparent;
+        background-color: #aeaeae;
+    }
+}
+
+.input-wrapper {
+    margin: 5px;
+}

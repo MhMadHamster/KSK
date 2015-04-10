@@ -1,0 +1,81 @@
+.typography {
+    width: 100%;
+    font-size: 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+
+    .headers {
+        display: inline-block;
+        width: 40%;
+    }
+
+    .h1 {
+        font-size: 27px;
+    }
+
+    .h2 {
+        font-size: 25px;
+    }
+
+    .h3 {
+        font-size: 23px;
+    }
+
+    .h4 {
+        font-size: 21px;
+    }
+
+    .h5 {
+        font-size: 18px;
+    }
+
+    .lists {
+        width: 60%;
+        display: inline-block;
+
+        .list {
+            padding: 20px;
+            color: #000;
+            display: inline-block;
+            width: 40%; 
+
+            & > ul,
+            & > ol {
+                list-style: none;
+                font-size: $list-font-size;
+
+                & a {
+                    color: #0489b5;
+                }
+            }
+
+            .list-ul {
+
+                & > li {
+                    padding: 5px 0;
+                    position: relative;
+                    padding-left: 10px;
+
+                    &:after {
+                        position: absolute;
+                        content: '-';
+                        display: block;
+                        left: $list-font-size / 30;
+                        top: $list-font-size / 6;
+                        margin: auto;
+                        color: #0489b5;
+                    }
+                }
+            }
+
+            .list-ol {
+                list-style-type: decimal;
+
+                & > li {
+                    padding: 5px 0;
+                    position: relative;
+                }
+            }
+        }
+    }
+}

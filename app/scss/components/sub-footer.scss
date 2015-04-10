@@ -1,0 +1,26 @@
+.sub-footer {
+    border-bottom: 15px solid #333;
+
+    &-wrapper {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .copy-mega {
+            float: left;
+            font-size: 11px;
+            color: #4a4a4a;
+            padding-top: 13px;
+
+            & > a {
+                text-decoration: underline;
+                color: #4a4a4a;
+            }
+        }
+
+        .stat {
+            float: right;
+            padding: 13px 0;
+        }
+    }
+}
