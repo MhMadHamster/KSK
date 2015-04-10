@@ -75,11 +75,14 @@ $(document).ready(function() {
 
 
     // Top Menu
-    $(".main-menu-item a").on("mouseover", function() {
-        $(this).closest(".main-menu-item").children("ul").effect('slide', { direction: 'up', mode: 'show' }, 100);
+    $(".main-menu-item a").on("click", function(e) {
+        if($(this).closest(".main-menu-item").has("ul")) {
+            e.preventDefault();
+            $(this).closest(".main-menu-item").children("ul").effect('fade', { direction: 'in', mode: 'show' }, 300);
+        }
     })
     $(".main-menu-item, .sub-menu, .sub-sub-menu").on("mouseleave", function() {
-        $(this).closest(".main-menu-item").children("ul").effect('slide', { direction: 'up', mode: 'hide' }, 100);
+        $(this).closest(".main-menu-item").children("ul").effect('fade', { direction: 'Out', mode: 'hide' }, 300);
     });
 
     $(".sub-menu-item").on("click", function() {
@@ -146,8 +149,9 @@ $(document).ready(function() {
     // accordion
     function close_accordion_section() {
         $('.accordion-open-wrapper > span').text('Развернуть');
-        $('.accordion .accordion-section-title').removeClass('active');
-        $('.accordion .accordion-section-content').slideUp(300).removeClass('open');
+        $('.accordion .accordion-section-content').slideUp(300).removeClass('open').promise().then(function() {
+            $('.accordion .accordion-section-title').removeClass('active');
+        });
     }
 
     $('.accordion-section-title').click(function(e) {

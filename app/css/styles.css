@@ -1728,7 +1728,7 @@ body {
     .company-photo .icon:hover {
       cursor: pointer; }
   .company-photo .icon-next {
-    right: 0px; }
+    right: 1px; }
   .company-photo .icon-prev {
     left: 0px; }
 
